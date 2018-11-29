@@ -12,4 +12,4 @@ mpicc -g -Wall -o output_name program_name.c
 mpiexec -n kernels_number ./output_name 
 ```
 
-more details see https://blog.csdn.net/james_154_best/article/details/82821877
+more details see [my blog](https://blog.csdn.net/james_154_best/article/details/82821877)
