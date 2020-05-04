@@ -9,7 +9,7 @@ void tree_sum(int my_rank, int size) {
             MPI_Recv(&temp, 1, MPI_INT, my_rank+half, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
             sum+=temp;
         }
-        else {
+        else if(my_rank < remain) {
             MPI_Send(&sum, 1, MPI_INT, my_rank-half, 0, MPI_COMM_WORLD);
             return;
         }
